@@ -31,10 +31,11 @@ The Autoencoder is based on deep neural networks, a framework based on the inter
 
 <img width="422" height="161" alt="image" src="https://github.com/user-attachments/assets/a0b8d177-76d8-406c-8061-aefeef75330c" />
 
-Autoencoder can be also used to anticipate the occurrence of the BROKEN status. In the field, before a machine breakdown, the associated sensors usually show signs of decaying performance. Therefore, the objective is to detect these warning signs as early as possible, via a increasing prediction error MSE. An example is shown in the following plot.
+Autoencoder can be also used to anticipate the occurrence of the BROKEN status. In the field, before a machine breakdown, the associated sensors usually show signs of decaying performance. Therefore, the objective is to detect these warning signs as early as possible, via a increasing error MSE of the prediction. An example is shown in the following plot.
 
 <img width="422" height="169" alt="image" src="https://github.com/user-attachments/assets/4ae96a16-3c5c-4a75-84e9-45c6d6c11f22" />
 
+Each red dot corresponds to a BROKEN status, which correspond to MSE peaks in the plot below.
 The Autoencoder approach turned out to be the most effective method for correlating sensor measurements with the pump status. The trained model can be used for the following purposes:
 - __Operational Status Monitoring__, to identify when the pump is malfunctioning or offline, serving as a reliable status indicator when direct telemetry is unavailable. This is particularly valuable in complex and distributed hydraulic networks to help pinpoint the root cause of anomalies detected by sensors;
 - __Predictive Maintenance__, To anticipate pump failures before they occur. If deviations from nominal operating conditions become significant, a redundant/backup pump can be activated, allowing operators to shut down and inspect the primary unit. This significantly reduces maintenance costs and downtime by enabling timely intervention before an unexpected system shutdown occurs.
