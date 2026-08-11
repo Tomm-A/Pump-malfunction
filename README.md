@@ -7,6 +7,8 @@ The dataset contains data from 52 sensors for different timestamps and the corre
 - 55 columns, including a timestamp, the 52 sensors, the pump status, and a remaining column to be analyzed;
 - 220320 rows, each of which is a recording at a given time.
 
+This dataset is extracted from the Kaggle page https://www.kaggle.com/datasets/nphantawee/pump-sensor-data/data, and originated from the paper "K-Nearest Neighbors for Anomaly Detection and Predictive Maintenance in Water Pumping System" by João Pablo Santos da Silva et al.s
+
 ## 2. Output
 
 The output to be considered is the column "machine status", whose value is one of the following:
