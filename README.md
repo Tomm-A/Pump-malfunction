@@ -24,7 +24,6 @@ The output to be considered is the column "machine status", whose value is one o
 - __RECOVERING__, corresponding to when the pump is under repair and, therefore, it is always after a BROKEN status. It has 14,477 records, corresponding to 6.57% of the total.
 
 ## Modelling
-## 4.4 Autoencoder
 Autoencoder is used in this paper. In this case, a model is trained to reconstruct the NORMAL operating status of the pump. When the predictions differ from the measured values, it implies that something anomalous is taking place. This is achieved through the following procedure:
 - A model is trained only with data related to the NORMAL status;
 - The trained model is used to make predictions, and the actual output evaluated is the Mean Squared Error (MSE) compared to the ground-truth data. When the MSE exceeds a defined threshold, an anomaly is detected.
